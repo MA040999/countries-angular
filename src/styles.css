@@ -3,3 +3,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+
+    :root {
+        --white: 0 0% 100%;
+        --clr-primary: var(--white);
+        --clr-secondary: 0 0% 98%;
+        --clr-text: 200 15% 8%;
+        --clr-placeholder: 0 0% 52%;
+    }
+
+    html {
+        font-family: 'Nunito Sans', system-ui, sans-serif;
+    }
+
+    .dark {
+        --clr-primary: 209 23% 22%;
+        --clr-secondary: 207 26% 17%;
+        --clr-text: var(--white);
+        --clr-placeholder: var(--white);
+    }
+}

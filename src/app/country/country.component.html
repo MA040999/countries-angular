@@ -1,0 +1,16 @@
+<div class="bg-clr-primary cursor-pointer text-clr-text rounded-md overflow-hidden min-h-full shadow-md transition-colors relative">
+    <a [title]="country.name.common + ' details'" [routerLink]="['/country', country.name.official]" class="w-full h-full absolute inset-0"></a>
+    <div class="h-40 w-full">
+        <img src="{{country.flags.png}}" srcset="{{country.flags.svg}}" class="h-full object-cover w-full" alt="Flag of {{country.name.official}}">
+    </div>
+    <div class="p-5 space-y-4">
+        <h2 class="font-extrabold">
+            {{country.name.common}}
+        </h2>
+        <div class="text-sm flex flex-col gap-1">
+            <span><strong class="font-semibold">Population:</strong> {{country.population.toLocaleString()}}</span>
+            <span><strong class="font-semibold">Region:</strong> {{country.region}}</span>
+            <span><strong class="font-semibold">Capital:</strong> {{country.capital}}</span>
+        </div>
+    </div>
+</div>

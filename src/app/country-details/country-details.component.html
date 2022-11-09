@@ -1,0 +1,16 @@
+<section class="px-viewport-inline-padding py-10">
+    <button aria-label="Go back" class="btn gap-3 text-clr-text shadow-sm border-none bg-clr-primary focus-visible:outline-current px-10 capitalize">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3" />
+        </svg>
+        <span aria-hidden="true">Back</span>
+    </button>
+</section>
+<section *ngIf="country" class="grid gap-10 auto-rows-min grid-cols-auto-fit-500px px-viewport-inline-padding py-10">
+    <div class="h-60 w-full">
+        <img src="{{country.flags.png}}" srcset="{{country.flags.svg}}" class="h-full object-cover w-full" alt="Flag of {{country.name.official}}">
+    </div>
+    <div>
+        <h1>{{country.name.common}}</h1>
+    </div>
+</section>
