@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Observable, take } from 'rxjs';
 import { CountryService } from '../country.service';
-import { ICountry } from '../country/country.interface';
+import { ITransformedCountry } from '../country/interfaces/country.interface';
 
 @Component({
   selector: 'app-country-details',
@@ -16,17 +15,32 @@ export class CountryDetailsComponent implements OnInit {
     private countryService: CountryService
   ) { }
 
-  country!: ICountry;
-
+  country!: ITransformedCountry;
 
   ngOnInit(): void {
 
-    const routeParams = this.route.snapshot.paramMap;
+    this.route.params.subscribe(params => {
 
-    const countryName = routeParams.get('countryName') ?? '';
+      window.scrollTo(0, 0)
 
-    this.countryService.getCountryByName(countryName).pipe(take(1)).subscribe((data: ICountry[]) => this.country = data[0]);
-  
+      if(params['countryCode']){
+
+        this.countryService.getCountryByCode(params['countryCode']).subscribe(country => this.country = country);
+
+        return
+
+      }
+
+      this.countryService.getCountryByName(params['countryName']).subscribe(country => this.country = country);
+
+    })
+
   }
 
+  getCountryByCode(code: string) {
+
+    this.countryService.getCountryByCode(code).subscribe(country => this.country = country);
+
+  }
+  
 }

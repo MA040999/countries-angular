@@ -1,6 +1,6 @@
-<div class="bg-clr-primary cursor-pointer text-clr-text rounded-md overflow-hidden min-h-full shadow-md transition-colors relative">
+<div class="bg-clr-primary cursor-pointer rounded-md min-h-full shadow-md transition-colors relative">
     <a [title]="country.name.common + ' details'" [routerLink]="['/country', country.name.official]" class="w-full h-full absolute inset-0"></a>
-    <div class="h-40 w-full">
+    <div class="h-40 w-full overflow-hidden rounded-t-md">
         <img src="{{country.flags.png}}" srcset="{{country.flags.svg}}" class="h-full object-cover w-full" alt="Flag of {{country.name.official}}">
     </div>
     <div class="p-5 space-y-4">

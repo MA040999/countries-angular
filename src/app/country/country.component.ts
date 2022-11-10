@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ICountry } from './country.interface';
+import { ICountry } from './interfaces/country.interface';
 
 @Component({
   selector: 'app-country',

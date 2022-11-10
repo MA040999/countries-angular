@@ -7,8 +7,9 @@ module.exports = {
   theme: {
     extend: {
       gridTemplateColumns: {
-        "auto-fit-200px": 'repeat(auto-fit, minmax(200px, 1fr))',
-        "auto-fit-500px": 'repeat(auto-fit, minmax(250px, 1fr))'
+        "auto-fit-4": 'repeat(auto-fit, minmax(200px, 1fr))',
+        "auto-fit-2": 'repeat(auto-fit, minmax(250px, 1fr))',
+        "auto-fit-3": 'repeat(auto-fit, minmax(150px, 1fr))'
       },
       colors: {
         "clr-primary": 'hsl(var(--clr-primary) / <alpha-value>)',

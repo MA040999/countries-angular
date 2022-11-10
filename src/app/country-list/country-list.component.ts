@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { CountryService } from '../country.service';
-import { ICountry } from '../country/country.interface';
+import { ICountry } from '../country/interfaces/country.interface';
 
 @Component({
   selector: 'app-country-list',
