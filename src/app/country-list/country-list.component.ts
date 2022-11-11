@@ -20,4 +20,24 @@ export class CountryListComponent implements OnInit {
     this.countries = this.countryService.getCountries();
   }
 
+  searchSubmit(name: string) {
+
+    if(name) {
+
+      this.countries = this.countryService.getCountriesByName(name);
+      
+      return
+    
+    }
+
+    this.countries = this.countryService.getCountries();
+
+  }
+
+  regionFilter(region: string) {
+
+    this.countries = this.countryService.getCountriesByRegion(region);
+
+  }
+
 }

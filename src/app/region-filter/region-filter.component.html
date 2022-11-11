@@ -1,0 +1,6 @@
+<div class="dropdown dropdown-bottom min-w-[200px] ml-auto">
+    <label tabindex="0" class="btn min-h-full items-center justify-between gap-2 w-full bg-clr-primary shadow-md capitalize text-clr-text">{{selectedRegion ? selectedRegion : "Filter by Region"}} <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></label>
+    <ul class="dropdown-content mt-1 col menu p-2 bg-clr-primary drop-shadow-md shadow-md rounded-lg w-full space-y-1 font-semibold">
+        <li *ngFor="let region of regions" class="{{selectedRegion === region ? 'bg-neutral-focus rounded-md' : ''}}"><a tabindex="0" (click)="regionFilter(region)" (keydown.enter)="regionFilter(region)">{{region}}</a></li>
+    </ul>
+</div>

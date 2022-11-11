@@ -1,4 +1,8 @@
-<section class="grid auto-rows-min grid-cols-auto-fit-4 gap-12 px-viewport-inline-padding py-4">
+<section class="grid auto-rows-min grid-cols-auto-fit-200 items-center px-viewport-inline-padding my-12 gap-6">
+    <app-country-search (searchSubmit)="searchSubmit($event)"></app-country-search>
+    <app-region-filter (regionFilterEvent)="regionFilter($event)" class="flex"></app-region-filter>
+</section>
+<section class="grid auto-rows-min grid-cols-auto-fit-200 gap-12 px-viewport-inline-padding py-4">
     <app-country *ngFor="let country of countries | async" [country]="country" >
     </app-country>
 </section>

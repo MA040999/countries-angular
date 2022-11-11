@@ -18,8 +18,16 @@ export class CountryService {
     return this.http.get<ICountry[]>(this.restCountriesAPIBaseUrl + '/all?fields=name,capital,flags,region,population');
   }
 
+  getCountriesByRegion(region: string) {
+    return this.http.get<ICountry[]>(this.restCountriesAPIBaseUrl + `/region/${region}?fields=name,capital,flags,region,population`);
+  }
+
   getCountryByName(name: string) {
     return this.http.get<ICountry[]>(this.restCountriesAPIBaseUrl + `/name/${name}?fullText=true&fields=name,capital,flags,region,population,subregion,tld,currencies,languages,borders`).pipe(map((data) => this.transformCountryResponse(data)));
+  }
+
+  getCountriesByName(name: string) {
+    return this.http.get<ICountry[]>(this.restCountriesAPIBaseUrl + `/name/${name}?fields=name,capital,flags,region,population`);
   }
 
   getCountryByCode(code: string) {

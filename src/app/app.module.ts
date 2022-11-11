@@ -8,6 +8,8 @@ import { CountryListComponent } from './country-list/country-list.component';
 import { CountryComponent } from './country/country.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CountryDetailsComponent } from './country-details/country-details.component';
+import { CountrySearchComponent } from './country-search/country-search.component';
+import { RegionFilterComponent } from './region-filter/region-filter.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { CountryDetailsComponent } from './country-details/country-details.compo
     CountryListComponent,
     CountryComponent,
     CountryDetailsComponent,
+    CountrySearchComponent,
+    RegionFilterComponent,
   ],
   imports: [
     BrowserModule,

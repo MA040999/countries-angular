@@ -6,13 +6,13 @@
         <span aria-hidden="true">Back</span>
     </a>
 </section>
-<section *ngIf="country" class="grid gap-10 auto-rows-min grid-cols-auto-fit-2 px-viewport-inline-padding py-10">
+<section *ngIf="country" class="grid gap-10 auto-rows-min grid-cols-auto-fit-250 px-viewport-inline-padding py-10">
     <div class="max-h-72 max-w-full aspect-square mx-auto">
         <img src="{{country.flags.png}}" srcset="{{country.flags.svg}}" class="h-full object-cover w-full" alt="Flag of {{country.name.official}}">
     </div>
     <div class="space-y-5">
         <h1 class="font-extrabold text-xl">{{country.name.common}}</h1>
-        <div class="text-sm grid auto-rows-min grid-cols-auto-fit-3 gap-8 gap-y-11">
+        <div class="text-sm grid auto-rows-min grid-cols-auto-fit-250 gap-8 gap-y-11">
             <div class="flex flex-col gap-2 flex-1">
                 <span><strong class="font-semibold">Native Name:</strong> {{country.name.nativeName.common}}</span>
                 <span><strong class="font-semibold">Population:</strong> {{country.population.toLocaleString()}}</span>
