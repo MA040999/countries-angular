@@ -1,27 +1,60 @@
-# CountriesAngular
+# Frontend Mentor - REST Countries API with color theme switcher solution
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.8.
+This is a solution to the [REST Countries API with color theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Development server
+## Table of contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Overview
 
-## Build
+### The challenge
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Users should be able to:
 
-## Running unit tests
+- See all countries from the API on the homepage
+- Search for a country using an `input` field
+- Filter countries by region
+- Click on a country to see more detailed information on a separate page
+- Click through to the border countries on the detail page
+- Toggle the color scheme between light and dark mode *(optional)*
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+### Links
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/countries-with-color-theme-switcher-using-angular-and-tailwind-css-wa_cjKxqvO)
+- Live Site URL: [Live Site](https://countries-angular-ma0409.netlify.app)
 
-## Further help
+## My process
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Built with
+
+- Semantic HTML5 markup
+- Tailwind CSS
+- CSS Grid
+- [DaisyUI](https://daisyui.com/) for some pre-built Tailwind CSS components
+- Mobile-first workflow
+- [Angular](https://angular.io/)
+
+
+### What I learned
+
+- Developing this project, I learnt how to work with CSS Grid and how to make responsive design with CSS Grid.
+
+- I also worked with Angular for the first time in this project and familiarized myself with the workflow of Angular like how to make a network request and how to go about managing data of the application.
+
+- Also, made sure to keep accessibility in mind while developing the project like keyboad navigation and screen reader accessibility.
+
+- Worked with CSS Variables to control the theme colors. 
+
+
+## Author
+
+- Frontend Mentor - [@MA040999](https://www.frontendmentor.io/profile/MA040999)
